@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.logotext {
+  text-decoration: none;
+  color: #FFCA2C;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.logotext:hover {
+  color: #FFCA2C;
+}
+.logotextsmall {
+  text-decoration: none;
+  color: #FFCA2C;
+  font-size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Rightmenu {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+.Rightmenu:hover{
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a.active{
+  background-color: #FFCA2C;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.fmain{
+  display: inline-block;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fhead {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFCA2C;
+}
+
+.fdata {
+  font-size: 15px;
+}
+
+.bg {
+  background-color: #dddddd;
+}
+
+.formhead{
+  font-weight: bold;
 }
