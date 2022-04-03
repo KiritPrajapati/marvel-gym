@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/marvel-gym/static/css/main.b56da443.css",
-    "main.js": "/marvel-gym/static/js/main.8bb0264b.js",
+    "main.js": "/marvel-gym/static/js/main.52fa6fce.js",
     "static/js/787.499c0e4e.chunk.js": "/marvel-gym/static/js/787.499c0e4e.chunk.js",
     "index.html": "/marvel-gym/index.html",
     "main.b56da443.css.map": "/marvel-gym/static/css/main.b56da443.css.map",
-    "main.8bb0264b.js.map": "/marvel-gym/static/js/main.8bb0264b.js.map",
+    "main.52fa6fce.js.map": "/marvel-gym/static/js/main.52fa6fce.js.map",
     "787.499c0e4e.chunk.js.map": "/marvel-gym/static/js/787.499c0e4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b56da443.css",
-    "static/js/main.8bb0264b.js"
+    "static/js/main.52fa6fce.js"
   ]
 }
