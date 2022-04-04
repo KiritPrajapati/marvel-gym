@@ -1,7 +1,9 @@
 import '../App.css';
 import Add from './ContactUs';
+import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import { Table,Container,Button } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import LinearProgress from '@mui/material/LinearProgress';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -13,8 +15,12 @@ import { getAuth,
   import { collection,addDoc,getDocs,doc,updateDoc,deleteDoc } from 'firebase/firestore';
   
 
-function View  () {
+function View  (props) {
+
+
+
   
+
   const [array,setArray] = useState([]);
   const [data,setData] = useState({
     name:'',
@@ -31,11 +37,19 @@ function View  () {
         return {...item.data(), id: item.id }
     }))
     setLoading(false);
+  
   };
+  let history = useHistory();
+
 
   useEffect(() => {
-    
-   getData()
+  const token = localStorage.getItem("user-info")
+
+  if(token == null){
+    history.push("/login");
+  }
+  getData()
+   
   },[])
 
   const auth = getAuth();
@@ -108,6 +122,11 @@ function View  () {
     )
   
 }) }
+
+<div className="container">
+<br/>
+  <button><Link to ="/logout">Logout</Link></button>
+</div>
 </div>
 </div>
 

@@ -10,7 +10,6 @@ function Header(props) {
       <Container>
         <Nav.Link>
           <Link className="logotext" to="/">
-            
             Marvel<sub className="logotextsmall">The</sub>Gym
           </Link>
         </Nav.Link>
@@ -19,16 +18,13 @@ function Header(props) {
           <Nav className="me-auto"></Nav>
           <Nav>
             <Nav.Link>
-              {" "}
               <Link to="/" className="Rightmenu">
-                {" "}
-                <FaHome size={30} className="pb-2" />{" "}
-              </Link>{" "}
+                <FaHome size={30} className="pb-2" />
+              </Link>
             </Nav.Link>
             <Nav.Link>
               <NavLink to="/aboutus" className="Rightmenu">
-                {" "}
-                About Us{" "}
+                About Us
               </NavLink>
             </Nav.Link>
             <Nav.Link>
