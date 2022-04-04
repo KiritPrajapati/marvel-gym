@@ -23,7 +23,7 @@ const JoinUs = () => {
     <Card.Text>
     @ MARVEL THE GYM We do things differently here. We are genuinely interested in you and your fitness goals.
     </Card.Text>
-    <Button variant="warning" onClick={callus} > Contact Us  </Button>
+    <Button variant="warning" onClick={callus} > Contact Us Now  </Button>
   </Card.Body>
   <Card.Footer className="text-muted bg-black "></Card.Footer>
 </Card>  
