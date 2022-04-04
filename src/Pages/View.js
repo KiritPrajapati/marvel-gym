@@ -70,7 +70,11 @@ function View  (props) {
    })
   }
   
+const handleOut = () =>{
 
+  localStorage.removeItem("user-info")
+  history.push("/login");
+}
 
   
 
@@ -125,7 +129,7 @@ function View  (props) {
 
 <div className="container">
 <br/>
-  <button><Link to ="/logout">Logout</Link></button>
+  <button onClick={handleOut}>Logout</button>
 </div>
 </div>
 </div>
