@@ -1,14 +1,15 @@
 import '../App.css';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Form,Button,Container } from 'react-bootstrap';
-import {app, database} from '../firebaseConfig';
+import { Form,Container } from 'react-bootstrap';
+
 import { getAuth,
   signInWithEmailAndPassword, 
   createUserWithEmailAndPassword, 
   getAdditionalUserInfo} from 'firebase/auth';
 
-const Login = ()=> {
+
+const Login = () => {
   const [data,setData] = useState({
     email: '',
     password: ''
@@ -20,18 +21,24 @@ const Login = ()=> {
 
   setData({ ...data, ...inputs})
   }
-  const handleSubmit = () => {
+
+  
+
+  const handleSubmit = async (event) => {
+
+    event.preventDefault();
     signInWithEmailAndPassword(auth, data.email, data.password)
     .then((response) => {
-   
-      // console.log(response.user)
       history.push("/view");
-      
+    
     })
+ 
     .catch((err) => {
        alert("Id or Password is Wrong")
     })
+  
   }
+  
 
   let history = useHistory();
 
@@ -39,24 +46,44 @@ const Login = ()=> {
   return (
     
 
-<Container className='p-5' >
-<Form  >
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label><b>Email address</b></Form.Label>
-    <Form.Control className="input"  name="email" type="email" placeholder="Enter email" onChange={event => handleInputs(event)} />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
+<Container className='p-5 text-center'  >
 
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label><b>Password</b></Form.Label>
-    <Form.Control className="input" name="password" type="password" placeholder="Password" onChange={event => handleInputs(event)} />
-  </Form.Group>
-  <Button variant="warning"  onClick={handleSubmit}>
-    Sign In
-  </Button>
-</Form>
+<div className="formdata">
+         <div className="card p-5 bg-black  "> 
+          <Form onSubmit={handleSubmit}>
+           
+
+            <input
+              className="input"
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+              onChange={(event) => handleInputs(event)}
+            ></input>
+
+
+            <input
+              className="input"
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              required
+              onChange={(event) => handleInputs(event)}
+            ></input>
+
+            <br />
+            <br />
+
+            <button type="submit" className="fbutton">
+              Sign In
+            </button>
+          </Form>
+        </div>
+        </div>
+
 </Container>
 
    

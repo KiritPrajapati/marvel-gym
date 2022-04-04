@@ -8,21 +8,20 @@ import ContactUs from "./Pages/ContactUs";
 import Footer from "./Components/Footer";
 
 import './App.css';
-import { useState } from 'react';
-import {app, database} from './firebaseConfig';
 
 
 function App() {
+
   return (
 
     <BrowserRouter>
     <Header/>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route path="/login" component={Login}/>
+      <Route exact path="/login" component={Login}/>
       <Route path="/aboutus" component={AboutUs}/>
       <Route path="/contactus" component={ContactUs}/>
-      <Route path="/view" component={View }/>
+      <Route exact path="/view" component={View}/>
       <Redirect to="/"/>
     </Switch>
      <Footer/>

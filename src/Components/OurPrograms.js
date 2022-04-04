@@ -10,7 +10,7 @@ const OurPrograms = () => {
             <h1 className="mt-5">Our Programs</h1>
             <h4 className="mt-4">
               Looking for a more personable and flexible gym with no
-              intimidation?{" "}
+              intimidation?
             </h4>
 
             <h6 className="mt-4">

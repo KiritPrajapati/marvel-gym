@@ -2,15 +2,15 @@ import React from "react";
 import "../App.css";
 import { Carousel } from 'react-bootstrap';
 
-const Banner = () => {
+function Banner()  {
     return (
        
        <Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      style={{ height:450 }}
-      src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGd5bXxlbnwwfHwwfHw%3D&w=1000&q=80"
+      style={{ height:450  }}
+      src={process.env.PUBLIC_URL + '/banner1.png'}
       alt="First slide"
     />
   
@@ -19,7 +19,7 @@ const Banner = () => {
     <img
       className="d-block w-100 "
       style={{ height:450 }}
-      src="https://wallpaperaccess.com/full/804836.jpg"
+      src={process.env.PUBLIC_URL + '/banner2.png'}
       alt="Second slide"
     />
 
@@ -29,7 +29,7 @@ const Banner = () => {
     <img
       className="d-block w-100"
       style={{ height:450 }}
-      src="https://media-cdn.tripadvisor.com/media/photo-s/16/31/38/e6/fitness-center-inside.jpg"
+      src={process.env.PUBLIC_URL + '/banner3.png'}
       alt="Third slide"
     />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, CardGroup } from "react-bootstrap";
+import { Card, CardGroup } from "react-bootstrap";
 
 const Membership = () => {
   return (

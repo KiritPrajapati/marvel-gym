@@ -6,13 +6,14 @@ import JoinUs from "../Components/JoinUs";
 import Membership from "../Components/Membership";
 import OurPrograms from "../Components/OurPrograms";
 
+
 const Home = () => {
     return (
        <div>
     <Banner/>
     <AboutSection/>
-    <Membership/>
     <JoinUs/>
+    <Membership/>
     <OurPrograms/>
     </div>
     )

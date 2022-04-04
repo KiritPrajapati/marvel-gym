@@ -6,7 +6,6 @@ const AboutUs = () => {
     return (
         
         <div>
-
         <AboutSection/>
         <OurPrograms/>
         </div>
