@@ -23,28 +23,28 @@ function Footer() {
           <div className="col-md-3 col-sm-6 ">
           <div className="fmain">
           <div className="fhead">Useful Links</div>
-            <div className="fdata">Home</div>
-            <div className="fdata">About Us</div>
-            <div className="fdata">Contact Us</div>
-            <div className="fdata">Admin Dashboard  </div>
+            <div className="fdata">Terms & Conditions</div>
+            <div className="fdata">Privacy Policy</div>
+            <div className="fdata">Refund Policy</div>
+            
           </div>
           </div>
           <div className="col-md-3 col-sm-6 ">
           <div className="fmain">
           <div className="fhead">Opening Hour</div>
-            <div className="fdata">Home</div>
-            <div className="fdata">About Us</div>
-            <div className="fdata">Contact Us</div>
-            <div className="fdata">Admin Dashboard  </div>
+            <div className="fdata">Monday-Saturday</div>
+            <div className="fdata">6:00 AM - 12:00 AM</div>
+            <div className="fdata">6:00 PM - 9:00 PM</div>
+            <div className="fdata">Sunday 6:00 AM - 10:00 Am</div>
           </div>
           </div>
           <div className="col-md-3 col-sm-6 ">
           <div className="fmain">
           <div className="fhead">Contact Us</div>
-            <div className="fdata">Home</div>
-            <div className="fdata">About Us</div>
-            <div className="fdata">Contact Us</div>
-            <div className="fdata">Admin Dashboard </div>
+            <div className="fdata"><b>Call us at</b> </div>
+            <div className="fdata">+91 9568485787</div>
+            <div className="fdata"><b>Email us at</b></div>
+            <div className="fdata">Care@marvelgym.com </div>
           </div>
           </div>
         </div>

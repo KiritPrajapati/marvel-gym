@@ -9,6 +9,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Redirect } from 'react-router-dom';
 import {app, database} from '../firebaseConfig';
+import Header from '../Components/Header';
 import { getAuth,
   signInWithEmailAndPassword, 
   createUserWithEmailAndPassword } from 'firebase/auth';
@@ -36,17 +37,16 @@ function View  () {
   
   };
   let history = useHistory();
-
-
  
+    useEffect(() => {
+          
   const token = localStorage.getItem("user-info")
-
   if(token == null){
     history.push("/login");
   }
-    useEffect(() => {
+    getData()
     
-    getData()  
+  
   
    
   },[])
@@ -70,10 +70,7 @@ function View  () {
   }
 
  
-const handleOut = () =>{
-  localStorage.removeItem("user-info")
-  history.push("/login");
-}
+
 
   
 
@@ -94,6 +91,9 @@ const handleOut = () =>{
   
  
   return (
+
+    <>
+    <Header/>
     <div className="App">
 
       
@@ -128,20 +128,21 @@ const handleOut = () =>{
 
 <div className="container">
 <br/>
-  <button onClick={handleOut}>Logout</button>
+
 </div>
 </div>
 </div>
 
 }
 </Container>
-                {/* <button onClick={()=> updateData(item.id)}>Update</button> */}
+              
                 
             </div>
        
      
 
     </div>
+    </>
   );
 }
 

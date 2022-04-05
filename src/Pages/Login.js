@@ -1,7 +1,8 @@
 import '../App.css';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Form,Container } from 'react-bootstrap';
+import { Form,Container,Card } from 'react-bootstrap';
+import Header from "../Components/Header";
 
 import { getAuth,
   signInWithEmailAndPassword, 
@@ -62,15 +63,16 @@ const Login = () => {
 
 
   return (
+    <>
+     <Header/>
     
 
 <Container className='p-5 text-center'  >
 
 <div className="formdata">
-         <div className="card p-5 bg-black  "> 
+         <div className="Card p-5 bg-black  "> 
           <Form onSubmit={handleSubmit}>
-           
-            
+          <Card.Title><p className='text-white cardhead'>Login</p></Card.Title>
             <input
               className="input"
               id="email"
@@ -103,7 +105,7 @@ const Login = () => {
         </div>
 
 </Container>
-
+</>
    
   );
 }

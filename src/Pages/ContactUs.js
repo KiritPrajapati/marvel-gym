@@ -1,12 +1,29 @@
 import "../App.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Form, Container } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { app, database } from "../firebaseConfig";
 import { getAuth } from "firebase/auth";
 import { collection, addDoc } from "firebase/firestore";
+import Header from "../Components/Header";
+
 
 const ContactUs = () => {
+
+  
+
+  useEffect(() => {
+        
+      const token = localStorage.getItem("user-info")
+      if(token != null){
+        history.push("/login");
+      }else{
+  
+      history.push("/contactus");
+      }
+      },[])
+
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -35,6 +52,8 @@ const ContactUs = () => {
   let history = useHistory();
 
   return (
+    <>
+    <Header/>
     <div className="App">
       <Container className="p-5  text-center ">
         <div className="formdata">
@@ -81,6 +100,7 @@ const ContactUs = () => {
         </div>
       </Container>
     </div>
+    </>
   );
 };
 

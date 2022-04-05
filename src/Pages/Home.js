@@ -5,11 +5,32 @@ import Banner from "../Components/Banner";
 import JoinUs from "../Components/JoinUs";
 import Membership from "../Components/Membership";
 import OurPrograms from "../Components/OurPrograms";
+import Header from "../Components/Header";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
+
 
 
 const Home = () => {
+
+    let history = useHistory();
+
+    useEffect(() => {
+          
+        const token = localStorage.getItem("user-info")
+        if(token == null){
+          history.push("/");
+        }else{
+    
+        history.push("/view");
+        }
+        },[])
+      
+
     return (
        <div>
+    <Header/>
     <Banner/>
     <AboutSection/>
     <JoinUs/>
