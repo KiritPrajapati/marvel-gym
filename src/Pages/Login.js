@@ -10,7 +10,7 @@ import { getAuth,
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 
-const Login = (props) => {
+const Login = () => {
 
   const [data,setData] = useState({
     email: '',
@@ -36,7 +36,7 @@ const Login = (props) => {
 
 
   
-  const [loggedIn, setLoggedIn] = useState(false);
+
 
   const handleSubmit = async (event) => {
   
@@ -46,7 +46,7 @@ const Login = (props) => {
      
       localStorage.setItem("user-info", "data")
       history.push("/view");
-      setLoggedIn(true);
+     
     })
  
     .catch((err) => {
@@ -70,7 +70,7 @@ const Login = (props) => {
          <div className="card p-5 bg-black  "> 
           <Form onSubmit={handleSubmit}>
            
-            {(loggedIn)}
+            
             <input
               className="input"
               id="email"

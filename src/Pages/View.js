@@ -15,11 +15,7 @@ import { getAuth,
   import { collection,addDoc,getDocs,doc,updateDoc,deleteDoc } from 'firebase/firestore';
   
 
-function View  (props) {
-
-
-
-  
+function View  () {
 
   const [array,setArray] = useState([]);
   const [data,setData] = useState({
@@ -42,13 +38,16 @@ function View  (props) {
   let history = useHistory();
 
 
-  useEffect(() => {
+ 
   const token = localStorage.getItem("user-info")
 
   if(token == null){
     history.push("/login");
   }
-  getData()
+    useEffect(() => {
+    
+    getData()  
+  
    
   },[])
 
@@ -69,9 +68,9 @@ function View  (props) {
        alert(err.message)
    })
   }
-  
-const handleOut = () =>{
 
+ 
+const handleOut = () =>{
   localStorage.removeItem("user-info")
   history.push("/login");
 }

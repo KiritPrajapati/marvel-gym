@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
 import Footer from "./Components/Footer";
+import { useEffect, useState } from "react";
 
 
 import './App.css';
@@ -22,7 +23,7 @@ function App() {
       <Route path="/login" component={Login}/>
       <Route path="/aboutus" component={AboutUs}/>
       <Route path="/contactus" component={ContactUs}/>
-      <Route exact path="/view" component={View}/>
+      <Route  path="/view"  component={View}/>
       <Redirect to="/"/>
     </Switch>
      <Footer/>
