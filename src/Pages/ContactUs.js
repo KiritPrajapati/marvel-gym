@@ -12,17 +12,7 @@ const ContactUs = () => {
 
   
 
-  useEffect(() => {
-        
-      const token = localStorage.getItem("user-info")
-      if(token != null){
-        history.push("/login");
-      }else{
   
-      history.push("/contactus");
-      }
-      },[])
-
 
   const [data, setData] = useState({
     name: "",

@@ -6,33 +6,16 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Footer from "../Components/Footer";
 const AboutUs = () => {
+  let history = useHistory();
 
-
-    let history = useHistory();
-
-    useEffect(() => {
-          
-        const token = localStorage.getItem("user-info")
-        if(token != null){
-          history.push("/login");
-        }else{
-    
-        history.push("/aboutus");
-        }
-        },[])
-
-
-    return (
-        
-        <div>
-        <Header/>
-        <AboutSection/>
-        <OurPrograms/>
-        <Footer/>
-        </div>
-    )
-
-  
-}
+  return (
+    <div>
+      <Header />
+      <AboutSection />
+      <OurPrograms />
+      <Footer />
+    </div>
+  );
+};
 
 export default AboutUs;

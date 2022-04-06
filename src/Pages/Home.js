@@ -10,38 +10,20 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import Footer from "../Components/Footer";
 
-
-
-
 const Home = () => {
+  let history = useHistory();
 
-    let history = useHistory();
-
-    useEffect(() => {
-          
-        const token = localStorage.getItem("user-info")
-        if(token == null){
-          history.push("/");
-        }else{
-    
-        history.push("/view");
-        }
-        },[])
-      
-
-    return (
-       <div>
-    <Header/>
-    <Banner/>
-    <AboutSection/>
-    <JoinUs/>
-    <Membership/>
-    <OurPrograms/>
-    <Footer/>
+  return (
+    <div>
+      <Header />
+      <Banner />
+      <AboutSection />
+      <JoinUs />
+      <Membership />
+      <OurPrograms />
+      <Footer />
     </div>
-    )
-
-  
-}
+  );
+};
 
 export default Home;

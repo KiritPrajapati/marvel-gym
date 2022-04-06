@@ -41,10 +41,7 @@ function View  () {
  
     useEffect(() => {
           
-  const token = localStorage.getItem("user-info")
-  if(token == null){
-    history.push("/login");
-  }
+
     getData()
     
   
@@ -59,17 +56,7 @@ function View  () {
 
   setData({ ...data, ...inputs})
   }
-  const handleSubmit = () => {
-   addDoc(dbInstance, data)
-   .then(() =>{
-      //  alert('Data Sent')
-      getData()
-   })
-   .catch((err) =>{
-       alert(err.message)
-   })
-  }
-
+  
  
 
 
