@@ -8,6 +8,7 @@ import OurPrograms from "../Components/OurPrograms";
 import Header from "../Components/Header";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 
 
@@ -36,6 +37,7 @@ const Home = () => {
     <JoinUs/>
     <Membership/>
     <OurPrograms/>
+    <Footer/>
     </div>
     )
 

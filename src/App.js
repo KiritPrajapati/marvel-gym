@@ -5,7 +5,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
-import Footer from "./Components/Footer";
+
 
 
 import './App.css';
@@ -25,7 +25,7 @@ function App() {
       <Route  path="/view"  component={View}/>
       <Redirect to="/"/>
     </Switch>
-     <Footer/>
+     
     </BrowserRouter>
   );
 }

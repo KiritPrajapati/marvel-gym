@@ -8,6 +8,7 @@ import Stack from '@mui/material/Stack';
 import LinearProgress from '@mui/material/LinearProgress';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Redirect } from 'react-router-dom';
+import Footer from "../Components/Footer";
 import {app, database} from '../firebaseConfig';
 import Header from '../Components/Header';
 import { getAuth,
@@ -142,6 +143,7 @@ function View  () {
      
 
     </div>
+    <Footer/>
     </>
   );
 }

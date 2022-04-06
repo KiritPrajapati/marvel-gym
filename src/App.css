@@ -32,7 +32,8 @@
 }
 
 button {
- 
+  margin-top: 7px !important;
+  display: flex;
   color: white;
   background-color: transparent;
   border: none;
@@ -104,6 +105,7 @@ a.active{
   background-size: cover;
 }
 
+
 .formdata{
   display: inline-block;
   text-align: left;
@@ -132,5 +134,16 @@ input[type=text],input[type=password],input[type=email]  {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+
+@media screen and (max-width:767px){
+  
+  .fmain{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  
 }
 

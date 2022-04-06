@@ -11,7 +11,7 @@ function Footer() {
         <div className="container-fluids bg-black text-white footer text-center ">
         <div className="container pb-4 ">
         <div className="row ">
-          <div className="col-md-3 col-sm-6 ">
+          <div className="col-md-3 col-sm-6  ">
           <div className="fmain">
             <div className="fhead "> Explore</div>
             <div className="fdata "><Link to="/" >Home</Link></div>
@@ -20,7 +20,7 @@ function Footer() {
             <div className="fdata"><Link to="/login" >Admin Dashboard  </Link></div>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6 ">
+          <div className="col-md-3 col-sm-6   ">
           <div className="fmain">
           <div className="fhead">Useful Links</div>
             <div className="fdata">Terms & Conditions</div>
@@ -29,7 +29,7 @@ function Footer() {
             
           </div>
           </div>
-          <div className="col-md-3 col-sm-6 ">
+          <div className="col-md-3 col-sm-6   ">
           <div className="fmain">
           <div className="fhead">Opening Hour</div>
             <div className="fdata">Monday-Saturday</div>
@@ -38,7 +38,7 @@ function Footer() {
             <div className="fdata">Sunday 6:00 AM - 10:00 Am</div>
           </div>
           </div>
-          <div className="col-md-3 col-sm-6 ">
+          <div className="col-md-3 col-sm-6   ">
           <div className="fmain">
           <div className="fhead">Contact Us</div>
             <div className="fdata"><b>Call us at</b> </div>

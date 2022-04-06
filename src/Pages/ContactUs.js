@@ -6,7 +6,7 @@ import { app, database } from "../firebaseConfig";
 import { getAuth } from "firebase/auth";
 import { collection, addDoc } from "firebase/firestore";
 import Header from "../Components/Header";
-
+import Footer from "../Components/Footer";
 
 const ContactUs = () => {
 
@@ -100,6 +100,7 @@ const ContactUs = () => {
         </div>
       </Container>
     </div>
+    <Footer/>
     </>
   );
 };

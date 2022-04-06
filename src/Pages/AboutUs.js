@@ -4,7 +4,7 @@ import AboutSection from "../Components/AboutSection";
 import Header from "../Components/Header";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-
+import Footer from "../Components/Footer";
 const AboutUs = () => {
 
 
@@ -28,6 +28,7 @@ const AboutUs = () => {
         <Header/>
         <AboutSection/>
         <OurPrograms/>
+        <Footer/>
         </div>
     )
 

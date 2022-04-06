@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Form,Container,Card } from 'react-bootstrap';
 import Header from "../Components/Header";
-
+import Footer from "../Components/Footer";
 import { getAuth,
   signInWithEmailAndPassword, 
   createUserWithEmailAndPassword, 
@@ -114,6 +114,7 @@ const Login = () => {
         </div>
 
 </Container>
+<Footer/>
 </>
    
   );
